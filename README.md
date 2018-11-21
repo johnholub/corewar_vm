@@ -7,6 +7,12 @@ Core War is a 1984 programming game created by D. G. Jones and A. K. Dewdney in 
 ## Champions
 
 For demonstration of virtual machine, we need couple of bots on .cor format. On directory "resorces" you find original vm asm and directory with champions. Using asm program, you can compile .s files into .cor.
+```
+cd resources
+```
+```
+./asm champs/mortel.s
+```
 
 ## VM
 
@@ -16,9 +22,9 @@ make
 ```
 After that run program with bots
 ```
-./corewar resources/champs/Gagnant.cor
+./corewar resources/champs/Gagnant.cor resources/champs/mortel.cor
 ```
 Flag -v run ncurces visualisation
 ```
-./corewar resources/champs/Gagnant.cor -v
+./corewar resources/champs/Gagnant.cor resources/champs/mortel.cor -v
 ```
